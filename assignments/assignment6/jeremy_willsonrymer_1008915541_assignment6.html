@@ -9562,7 +9562,6 @@ $$</p>
 <span class="w">    </span><span class="sd">"""Calculate root mean squared error."""</span>
     
     <span class="c1"># Write your code here.</span>
-    <span class="c1">#return ((1 / len(predicted)) * sum((actual - predicted)**2)) ** 0.5</span>
     <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">((</span><span class="n">actual</span> <span class="o">-</span> <span class="n">predicted</span><span class="p">)</span> <span class="o">**</span> <span class="mi">2</span><span class="p">))</span>
 </pre></div>
 </div>
@@ -12566,7 +12565,7 @@ Improved model has lower mean CV RMSE: True
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>It makes sense that quality/condition of the structure would impact selling price. There are several variables in the dataset that may be related, such as Overall Qual, Overall Cond (Ordinal), Year Built (Discrete), Year Remod/Add. We can compare each with selling price to confirm whether a relationship exists.</p>
+<p>It makes sense that quality/condition of the structure would impact selling price since people will pay more for higher quality goods. There are several variables in the dataset that may be related, such as Overall Qual, Overall Cond (Ordinal), Year Built (Discrete), Year Remod/Add. We can compare each with selling price to confirm whether a relationship exists.</p>
 </div>
 </div>
 </div>
@@ -13097,17 +13096,17 @@ Final-model mean CV RMSE: $30,218
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Final cross-validation RMSE: $30,218
-Final test RMSE: $41,159
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>C:\Users\jwill\anaconda3\Lib\site-packages\sklearn\preprocessing\_encoders.py:262: UserWarning: Found unknown categories in columns [2] during transform. These unknown categories will be encoded as all zeros
+  warnings.warn(msg, UserWarning)
 </pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>C:\Users\jwill\anaconda3\Lib\site-packages\sklearn\preprocessing\_encoders.py:262: UserWarning: Found unknown categories in columns [2] during transform. These unknown categories will be encoded as all zeros
-  warnings.warn(msg, UserWarning)
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Final cross-validation RMSE: $30,218
+Final test RMSE: $41,159
 </pre>
 </div>
 </div>
